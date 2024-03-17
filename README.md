@@ -14,16 +14,16 @@ A mobile application designed to view and contact available pets ready for adopt
 **Admin Permissions** - Admin flagged accounts will have permissions to add, edit, create, and delete dogs in the records.<br />
 
 ## Sample
-**Login**
-![Login](https://github.com/ElijahTam-od/PetCare/assets/163732378/b36e1496-9a15-494b-a03e-d97ccd6f108e)
+**Login**<br />
+![Login](https://github.com/ElijahTam-od/PetCare/assets/163732378/b36e1496-9a15-494b-a03e-d97ccd6f108e) <br />
 
-**Dashboard**
-![Dashboard](https://github.com/ElijahTam-od/PetCare/assets/163732378/34a8f0fb-4081-4001-bc64-f3aa8c96bf75)
+**Dashboard**<br />
+![Dashboard](https://github.com/ElijahTam-od/PetCare/assets/163732378/34a8f0fb-4081-4001-bc64-f3aa8c96bf75) <br />
 
-**Dog List**
-![DogList](https://github.com/ElijahTam-od/PetCare/assets/163732378/f139c75e-56f9-415f-a932-a7013792563e)
+**Dog List** <br />
+![DogList](https://github.com/ElijahTam-od/PetCare/assets/163732378/f139c75e-56f9-415f-a932-a7013792563e) <br />
 
-**Edit Dog**
-![EditDog](https://github.com/ElijahTam-od/PetCare/assets/163732378/ad327c51-5118-4585-ab28-f9e98c2db35f)
+**Edit Dog** <br />
+![EditDog](https://github.com/ElijahTam-od/PetCare/assets/163732378/ad327c51-5118-4585-ab28-f9e98c2db35f) <br />
 
 
