@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:background="@drawable/rounded_bg"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/dogPostName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Dog Name"
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dogPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/dogPostAdoptionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adoption Status"
+        android:maxLines="1"
+        android:textSize="14sp"
+
+        android:layout_below="@id/dogPostImage"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="8dp"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        android:background="@drawable/rounded_bg_grey"
+        />
+
+    <TextView
+        android:id="@+id/dogPostDescriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:maxLines="1"
+        android:textSize="21sp"
+        android:textStyle="bold"
+
+        android:layout_below="@id/dogPostAdoptionStatus"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dogPostDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description..."
+        android:maxLines="1"
+        android:textSize="16sp"
+
+        android:layout_below="@id/dogPostDescriptionTitle"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="8dp"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dogPostContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us at +1 (555) 123-4567"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        android:layout_below="@id/dogPostDescription"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="8dp"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        />
+</RelativeLayout>
+

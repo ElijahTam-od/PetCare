@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDF8"
+    tools:context=".EditDogActivity">
+
+    <ImageView
+        android:id="@+id/editDogBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/back"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Edit Dog"
+        android:textColor="#73A14D"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDogBackBtn" />
+
+    <EditText
+        android:id="@+id/editDogId"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/dog_id"
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        android:hint="Dog ID"
+        android:inputType="textPersonName"
+        android:textColorHint="#73A14D"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editDogName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/dog_name"
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#73A14D"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDogId" />
+
+    <EditText
+        android:id="@+id/editDogPicture"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/dog_picture"
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        android:hint="Picture Link"
+        android:inputType="textPersonName"
+        android:textColorHint="#73A14D"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDogName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutAdoptDropdown"
+
+        android:hint="Adoption Status"
+        android:textColorHint="#73A14D"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/editDogPicture"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+
+
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:background="@color/white"
+            android:id="@+id/autocompleteTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/editDogOwner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/dog_owner"
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        android:hint="Owner"
+        android:inputType="none"
+        android:textColorHint="#73A14D"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutAdoptDropdown" />
+
+    <TextView
+        android:id="@+id/textViewDogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+
+        android:textColor="#73A14D"
+        android:textSize="18sp"
+
+        android:drawableStart="@drawable/baseline_description_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        app:layout_constraintTop_toBottomOf="@+id/editDogOwner"
+        />
+
+    <EditText
+        android:id="@+id/editDogDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+
+        android:hint="Type Here..."
+        android:textColorHint="#707070"
+        android:textSize="18sp"
+
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:lines="5"
+        android:minLines="3"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDogDescription" />
+
+
+    <ImageView
+        android:id="@+id/imageBtnEditDogSubmit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+
+        android:src="@drawable/btn_arrow1"
+        app:layout_constraintEnd_toEndOf="@+id/editDogOwner"
+        app:layout_constraintTop_toBottomOf="@+id/editDogDescription" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
